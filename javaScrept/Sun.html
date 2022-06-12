@@ -1,0 +1,25 @@
+<html>
+    <head>
+        link
+        <title>Sum</title>
+    </head>
+    <body>
+        <H1>Proudect</H1>
+        <p> the price 100$ </p>
+        <p> ener proudect </p>
+        <input type="text" id="price" >
+        <button onclick="sum()" >Sum</button>
+        <p id="sumDone" ></p>
+        <script> 
+        function sum(){
+            let price = document.getElementById("price").value;
+            let priceint = parseInt(price);
+            let sum,topric,tax;
+            sum= 100 * priceint;
+            tex= sum * 0.1;
+            topric=tex+sum;
+             document.getElementById("sumDone").innerHTML = topric;
+        }
+        </script>
+    </body>
+</html>

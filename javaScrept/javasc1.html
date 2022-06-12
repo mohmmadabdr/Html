@@ -1,0 +1,35 @@
+<html>
+
+<head>
+    <title>Sum</title>
+    <script type="text/javascript">
+        // تعريف قيم الى الوقت 
+        var now, hours;
+        // ادخال قيمة الوقت الحالى 
+        now = new Date();
+        hours = now.getHours();
+        // الى ظهار الساعة بي توقيت 12 ساعة
+        if (hours > 12) {
+            hours = hours - 12;
+            document.writeln(" Time = " + hours + "\tPM");
+        } else {
+            document.writeln(" Time = " + hours + "\tAM");
+        }
+        // تعريف المتغيرات
+        var num1, num2, sum;
+        // داخل قيمة x
+        num1 = window.prompt("enter number1");
+        // تحويل قيمة x
+        number1 = parseInt(num1);
+        // داخل قيمة y
+        num2 = window.prompt("enter number2");
+        // تحويل قيمة y
+        number2 = parseInt(num2);
+        // عملية الجميع القيم
+        sum = number1 + number2;
+        // print is sum number
+        document.writeln("<h1></h1>" + number1 + "+" + number2 + "=" + sum);
+    </script>
+</head>
+
+</html>
